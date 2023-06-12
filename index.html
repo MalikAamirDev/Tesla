@@ -9,63 +9,103 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
       rel="stylesheet"
     />
+    <style>
+      .custom-background {
+        background-image: url("assets/images/model-3.jpg");
+      }
+      .custom-background2 {
+        background-image: url("assets/images/model-y.jpg");
+      }
+      .custom-background3 {
+        background-image: url("assets/images/model-s.jpg");
+      }
+      .custom-background4 {
+        background-image: url("assets/images/model-x.jpg");
+      }
+      .custom-background5 {
+        background-image: url("assets/images/solar-panel.jpg");
+      }
+      .custom-background6 {
+        background-image: url("assets/images/solar-panel-roof.jpg");
+      }
+      .custom-background7 {
+        background-image: url("assets/images/charger.jpg");
+      }
+      .scroll-container {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+      }
+      .scroll-section {
+        scroll-snap-align: start;
+        height: 100vh;
+      }
+      .bgColor2 {
+        background-color: #f7fafc; /* Replace with the desired background color */
+      }
+    </style>
   </head>
   <body>
-    <div>
-    <nav
-      class="bg-transparent dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 "
-    >
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <a href="https://flowbite.com/" class="flex items-center">
-          <img src="assets/images/logo.png" class="h-3 mr-3" alt="Flowbite Logo" />
-        </a>
-        <div class="flex md:order-2">
-          <!-- Right Menu -->
+    <div class="scroll-container">
+      <section id="section1" class="h-screen scroll-section">
+        <nav
+          class="bg-transparent dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-gray-200 dark:border-gray-600"
+        >
           <div
-            class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
-            id="navbar-sticky"
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
           >
-            <ul
-              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 bg-transparent"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Shop</a
+            <a href="https://flowbite.com/" class="nav-link flex items-center">
+              <img
+                src="assets/images/logo.png"
+                class="h-3 mr-3"
+                alt="Flowbite Logo"
+              />
+            </a>
+            <div class="flex md:order-2">
+              <!-- Right Menu -->
+              <div
+                class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
+                id="navbar-sticky"
+              >
+                <ul
+                  class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 bg-transparent"
                 >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Account</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >More</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!-- data-collapse-toggle="navbar-sticky" -->
-          <button
-            type="button"
-            class="inline-flex items-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-sticky"
-            aria-expanded="false"
-            data-drawer-target="drawer-right-example"
-            data-drawer-show="drawer-right-example"
-            data-drawer-placement="right"
-            aria-controls="drawer-right-example"
-          >
-            <span class="sr-only">Open main menu</span>
-            <!-- <svg
+                  <li>
+                    <a
+                      href="#"
+                      class="nav-link block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                      >Shop</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="nav-link block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                      >Account</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="nav-link block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                      >More</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- data-collapse-toggle="navbar-sticky" -->
+              <button
+                type="button"
+                class="inline-flex items-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-sticky"
+                aria-expanded="false"
+                data-drawer-target="drawer-right-example"
+                data-drawer-show="drawer-right-example"
+                data-drawer-placement="right"
+                aria-controls="drawer-right-example"
+              >
+                <span class="sr-only">Open main menu</span>
+                <!-- <svg
               class="w-6 h-6"
               aria-hidden="true"
               fill="currentColor"
@@ -78,194 +118,423 @@
                 clip-rule="evenodd"
               ></path>
             </svg> -->
-            <a
-              href="#"
-              class="flex p-1 px-5 items-center text-gray-900 rounded-lg dark:text-white bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 bg-opacity-50"
+                <a
+                  href="#"
+                  class="flex p-1 px-5 items-center text-gray-900 rounded-lg dark:text-white bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 bg-opacity-50"
+                >
+                  <span class="font-medium text-base">Menu</span>
+                </a>
+              </button>
+            </div>
+            <!-- Center Menu -->
+            <div
+              class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
+              id="navbar-sticky"
             >
-              <span class="font-medium text-base">Menu</span>
-            </a>
-          </button>
-        </div>
-        <!-- Center Menu -->
+              <ul
+                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 bg-transparent"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    aria-current="page"
+                    >Model S</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Model 3</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Model X</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Model Y</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Solar Roof</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Solar Panels</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >PowerWall</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- drawer component -->
         <div
-          class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
-          id="navbar-sticky"
+          id="drawer-right-example"
+          class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-80 dark:bg-gray-800"
+          tabindex="-1"
+          aria-labelledby="drawer-right-label"
         >
-          <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 bg-transparent"
+          <button
+            type="button"
+            data-drawer-hide="drawer-right-example"
+            aria-controls="drawer-right-example"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
           >
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                aria-current="page"
-                >Model S</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Model 3</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Model X</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Model Y</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Solar Roof</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Solar Panels</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >PowerWall</a
-              >
-            </li>
-          </ul>
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+          <div class="py-4 overflow-y-auto">
+            <ul class="space-y-2 font-medium">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <span class="ml-3">Model S</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <span class="flex-1 ml-3 whitespace-nowrap">Model 3</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <span class="flex-1 ml-3 whitespace-nowrap">Model X</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <span class="flex-1 ml-3 whitespace-nowrap">Model Y</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <span class="flex-1 ml-3 whitespace-nowrap"
+                    >Solar Panels</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <span class="flex-1 ml-3 whitespace-nowrap">Solar Roof</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <span class="flex-1 ml-3 whitespace-nowrap">Power Wall</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!-- drawer component -->
-    <div
-      id="drawer-right-example"
-      class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-80 dark:bg-gray-800"
-      tabindex="-1"
-      aria-labelledby="drawer-right-label"
-    >
-      <!-- <h5
-        id="drawer-navigation-label"
-        class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400"
-      >
-        Menu
-      </h5> -->
-      <button
-        type="button"
-        data-drawer-hide="drawer-right-example"
-        aria-controls="drawer-right-example"
-        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-      >
-        <svg
-          aria-hidden="true"
-          class="w-5 h-5"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
+        <header
+          class="relative flex justify-center h-screen mb-12 overflow-hidden"
         >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-        <span class="sr-only">Close menu</span>
-      </button>
-      <div class="py-4 overflow-y-auto">
-        <ul class="space-y-2 font-medium">
-          <li>
-            <a
-              href="#"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+          <div class="flex flex-col pt-24 justify-between items-center">
+            <div class="text-center">
+              <div class="relative z-30 text-5xl text-white font-semibold">
+                Experience Tesla
+              </div>
+              <div class="relative z-30 text-base text-white pt-3">
+                Schedule a Demo Drive Today
+              </div>
+            </div>
+            <div class="pb-20">
+              <button
+                type="button"
+                class="relative z-30 py-1.5 px-20 rounded text-white border-white border-solid border-2 font-semibold"
+              >
+                Demo Drive
+              </button>
+            </div>
+          </div>
+          <video
+            autoplay
+            loop
+            muted
+            class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+          >
+            <source src="assets/video/video.webm" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </header>
+      </section>
+      <!-- Section 5 -->
+      <section
+        id="section5"
+        class="h-screen scroll-section custom-background4 bg-cover bg-no-repeat bg-center flex justify-center"
+      >
+        <div class="flex flex-col pt-24 justify-between items-center">
+          <div class="text-center">
+            <div class="relative z-30 text-5xl text-black font-semibold">
+              Model X
+            </div>
+            <div class="relative z-30 text-base text-black pt-1 underline">
+              View Inventory
+            </div>
+            <!-- <div class="relative z-30 text-base text-black pt-1">
+           After Federal Tax Credit
+         </div> -->
+          </div>
+          <div class="pb-20 text-center">
+            <button
+              type="button"
+              class="relative z-30 py-1.5 px-20 rounded text-white font-semibold bg-gray-900 md:mr-4 inline-block mx-auto"
             >
-              <span class="ml-3">Model S</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              Order Now
+            </button>
+            <button
+              type="button"
+              class="relative z-30 py-1.5 px-20 rounded text-gray font-semibold bg-white inline-block mx-auto mt-4"
             >
-              <span class="flex-1 ml-3 whitespace-nowrap">Model 3</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              Demo Drive
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2 -->
+      <section
+        id="section2"
+        class="h-screen scroll-section custom-background bgColor2 bg-cover bg-no-repeat bg-center flex justify-center"
+      >
+        <div class="flex flex-col pt-24 justify-between items-center">
+          <div class="text-center">
+            <div class="relative z-30 text-5xl text-black font-semibold">
+              Model 3
+            </div>
+            <div class="relative z-30 text-base text-black pt-1 underline">
+              Starting at $32,740
+            </div>
+            <div class="relative z-30 text-base text-black pt-1">
+              After Federal Tax Credit
+            </div>
+          </div>
+          <div class="pb-20 text-center">
+            <button
+              type="button"
+              class="relative z-30 py-1.5 px-20 rounded text-white font-semibold bg-gray-900 md:mr-4 inline-block mx-auto"
             >
-              <span class="flex-1 ml-3 whitespace-nowrap">Model X</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              Order Now
+            </button>
+            <button
+              type="button"
+              class="relative z-30 py-1.5 px-20 rounded text-gray font-semibold bg-white inline-block mx-auto mt-4"
             >
-              <span class="flex-1 ml-3 whitespace-nowrap">Model Y</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              Demo Drive
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Section 3 -->
+      <section
+        id="section3"
+        class="h-screen scroll-section custom-background2 bg-cover bg-no-repeat bg-center flex justify-center"
+      >
+        <div class="flex flex-col pt-24 justify-between items-center">
+          <div class="text-center">
+            <div class="relative z-30 text-5xl text-black font-semibold">
+              Model Y
+            </div>
+            <div class="relative z-30 text-base text-black pt-1 underline">
+              Starting at $39,990
+            </div>
+            <div class="relative z-30 text-base text-black pt-1">
+              After Federal Tax Credit
+            </div>
+          </div>
+          <div class="pb-20 text-center">
+            <button
+              type="button"
+              class="relative z-30 py-1.5 px-20 rounded text-white font-semibold bg-gray-900 md:mr-4 inline-block mx-auto"
             >
-              <span class="flex-1 ml-3 whitespace-nowrap">Solar Panels</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              Order Now
+            </button>
+            <button
+              type="button"
+              class="relative z-30 py-1.5 px-20 rounded text-gray font-semibold bg-white inline-block mx-auto mt-4"
             >
-              <span class="flex-1 ml-3 whitespace-nowrap">Solar Roof</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              Demo Drive
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Section 4 -->
+      <section
+        id="section4"
+        class="h-screen scroll-section custom-background3 bg-cover bg-no-repeat bg-center flex justify-center"
+      >
+        <div class="flex flex-col pt-24 justify-between items-center">
+          <div class="text-center">
+            <div class="relative z-30 text-5xl text-black font-semibold">
+              Model S
+            </div>
+            <div class="relative z-30 text-base text-black pt-1 underline">
+              View Inventory
+            </div>
+            <!-- <div class="relative z-30 text-base text-black pt-1">
+            After Federal Tax Credit
+          </div> -->
+          </div>
+          <div class="pb-20 text-center">
+            <button
+              type="button"
+              class="relative z-30 py-1.5 px-20 rounded text-white font-semibold bg-gray-900 md:mr-4 inline-block mx-auto"
             >
-              <span class="flex-1 ml-3 whitespace-nowrap">Power Wall</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+              Order Now
+            </button>
+            <button
+              type="button"
+              class="relative z-30 py-1.5 px-20 rounded text-gray font-semibold bg-white inline-block mx-auto mt-4"
+            >
+              Demo Drive
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Section 6 -->
+      <section
+        id="section6"
+        class="h-screen scroll-section custom-background5 bg-cover bg-no-repeat bg-center flex justify-center"
+      >
+        <div class="flex flex-col pt-24 justify-between items-center">
+          <div class="text-center">
+            <div class="relative z-30 text-5xl text-black font-semibold">
+              Solar Panels
+            </div>
+            <div class="relative z-30 text-base text-black pt-1 underline">
+              Schedule a Virtual Consultation
+            </div>
+            <!-- <div class="relative z-30 text-base text-black pt-1">
+            After Federal Tax Credit
+          </div> -->
+          </div>
+          <div class="pb-20 text-center">
+            <button
+              type="button"
+              class="relative z-30 py-1.5 px-20 rounded text-white font-semibold bg-gray-900 md:mr-4 inline-block mx-auto"
+            >
+              Order Now
+            </button>
+            <button
+              type="button"
+              class="relative z-30 py-1.5 px-20 rounded text-gray font-semibold bg-white inline-block mx-auto mt-4"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Section 7 -->
+      <section
+        id="section7"
+        class="h-screen scroll-section custom-background6 bg-cover bg-no-repeat bg-center flex justify-center"
+      >
+        <div class="flex flex-col pt-24 justify-between items-center">
+          <div class="text-center">
+            <div class="relative z-30 text-5xl text-black font-semibold">
+              Solar Roof
+            </div>
+            <div class="relative z-30 text-base text-black pt-1 underline">
+              Produce Clean Energy From Your Roof
+            </div>
+            <!-- <div class="relative z-30 text-base text-black pt-1">
+            After Federal Tax Credit
+          </div> -->
+          </div>
+          <div class="pb-20 text-center">
+            <button
+              type="button"
+              class="relative z-30 py-1.5 px-20 rounded text-white font-semibold bg-gray-900 md:mr-4 inline-block mx-auto"
+            >
+              Order Now
+            </button>
+            <button
+              type="button"
+              class="relative z-30 py-1.5 px-20 rounded text-gray font-semibold bg-white inline-block mx-auto mt-4"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Section 8 -->
+      <section
+        id="section8"
+        class="h-screen scroll-section custom-background7 bg-cover bg-no-repeat bg-center flex justify-center"
+      >
+        <div class="flex flex-col pt-24 justify-between items-center">
+          <div class="text-center">
+            <div class="relative z-30 text-5xl text-black font-semibold">
+              Accessories
+            </div>
+            <!-- <div class="relative z-30 text-base text-black pt-1">
+            After Federal Tax Credit
+          </div> -->
+          </div>
+          <div class="pb-20">
+            <button
+              type="button"
+              class="relative z-30 py-1.5 px-20 rounded text-white font-semibold bg-gray-900 mr-4"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
-    <header
-    class="relative flex items-center justify-center h-screen mb-12 overflow-hidden"
-  >
-    <div
-      class="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl"
-    >
-      Welcome to my site!
-    </div>
-    <video
-      autoplay
-      loop
-      muted
-      class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
-    >
-      <source
-        src="assets/video/video.webm"
-        type="video/mp4"
-      />
-      Your browser does not support the video tag.
-    </video>
-  </header>
-</div>
-   
+    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
   </body>
 </html>
